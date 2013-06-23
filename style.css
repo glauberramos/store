@@ -24,6 +24,7 @@ article {
 
 strong {
   margin-left: 30px;
+  font-weight: normal;
   border-bottom: 1px solid #eee;
 }
 
@@ -35,6 +36,7 @@ img {
 h1 {
   font-size: 1.4em;
   margin-left: 20px;
+  font-weight: normal;
 }
 
 h2 {
@@ -45,6 +47,7 @@ h2 {
   margin-top: 10px;
   border-bottom: 1px solid #eee;
   padding-bottom: 7px;
+  font-weight: normal;
 }
 
 h3 {
@@ -52,6 +55,7 @@ h3 {
   color: #bbb;
   margin-left: 20px;
   margin-bottom: 40px;
+  font-weight: normal;
 }
 
 ul {
