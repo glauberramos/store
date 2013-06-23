@@ -11,6 +11,7 @@ body {
 }
 
 article {
+  position: relative;
   display: inline-block;
   width: 35%;
   margin: 1%;
@@ -26,8 +27,8 @@ strong {
   margin-left: 30px;
   border-radius: 2px;
   border-bottom: 1px solid #eee;
-  border: 2px solid #57ad68;
-  color: #57ad68;
+  border: 2px solid rgb(64, 138, 78);
+  color: rgb(64, 138, 78);
   padding: 3px 5px;
   font-weight: 600;
 }
@@ -56,7 +57,7 @@ h2 {
 
 h3 {
   font-size: 0.8em;
-  color: #bbb;
+  color: #999;
   margin-left: 20px;
   margin-bottom: 40px;
   font-weight: normal;
@@ -75,7 +76,7 @@ li {
 a {
   display: block;
   margin-left: 30px;
-  margin-top: 20px;
+  margin-top: 35px;
   cursor: pointer;
   height: 45px;
   width: 190px;
@@ -87,11 +88,44 @@ a {
   color: white;
   border-radius: 3px;
   font-size: 0.8em;
-  border-bottom: 3px solid rgb(46, 94, 55);
+  border-bottom: 3px solid rgb(64, 138, 78);
 }
 
 i {
   font-size: 1.3em;
   margin-right: 10px;
   margin-left: 5px;
+}
+
+.sold-overlay {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #ddd;
+  opacity: 0.5;
+}
+
+.sold {
+  display: none;
+  position: relative;
+  top: 170px;
+  background-image: linear-gradient(to bottom,rgb(255, 50, 50), rgb(202, 0, 44) 130%);
+  padding: 15px 65px;
+  left: 25%;
+  color: white;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 1.3em;
+  border: 1px solid rgb(202, 0, 44);
+}
+
+article.finish .sold {
+  display: inline;
+}
+
+article.finish .sold-overlay {
+  display: inline;
 }
