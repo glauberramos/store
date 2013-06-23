@@ -110,16 +110,17 @@ i {
 
 .sold {
   display: none;
-  position: relative;
-  top: 170px;
+  top: 200px;
   background-image: linear-gradient(to bottom,rgb(255, 50, 50), rgb(202, 0, 44) 130%);
-  padding: 15px 65px;
   left: 25%;
   color: white;
   border-radius: 2px;
   font-weight: 500;
   font-size: 1.3em;
   border: 1px solid rgb(202, 0, 44);
+  -webkit-transform: rotate(6deg);
+  position: absolute;
+  padding: 25px 65px;
 }
 
 article.finish .sold {
